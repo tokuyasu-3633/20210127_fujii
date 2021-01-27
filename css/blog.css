@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* 共通 */
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+p{
+  line-height: 23px;
+  font-weight: normal;
+}
+body{
+  height: 100%;
+}
+/* header */
+.header{
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.header-title{
+  font-size: 24px;
+  padding-left: 20px;
+}
+.header-nav-list{
+  display: flex;
+  padding-right: 20px;
+}
+.header-nav-item{
+  padding-left: 30px;
+}
+.header-nav-list a{
+  font-size: 17px;
+  color: #000;
+}
+.header-nav-list a:hover{
+  color: rgba(97, 96, 96, 0.925);
+}
+#hamburger{
+  display: none;
+}
+
+/* home */
+.home{
+  z-index: 1;
+  height: 30vh;
+  width: 100%;
+  background-image: url(../img/mv.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-top: 60px;
+  color: white;
+}
+.home h1{
+  font-size: 35px;
+  padding: 100px 0 20px;
+}
+/* blog */
+.blog{
+  background-color:white;
+  text-align: center;
+  padding: 100px 10% 80px;
+}
+.blog h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.blog-list{
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 20px 20px; 
+  text-align: start;
+  margin-bottom: 20px;
+}
+.blog-card p{
+  margin: 5px 0;
+}
+.blog-card a{
+  font-size: 16px;
+  color: #000;
+}
+.button{
+  background-color: rgb(197, 2, 2);
+  color: white;
+  width: 150px;
+  height: 20px;
+  padding: 15px 70px;
+}
+.blog a:hover{
+  color: rgb(148, 148, 148);
+}
+.blog-card img:hover{
+  opacity: 0.5;
+}
+
+.button:hover{
+  background-color: rgb(248, 147, 147);
+}
+/* お問い合わせ */
+.Ques{
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  padding: 80px 5%;
+}
+.Ques h2{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.Ques p{
+  margin: 30px 0;
+}
+.button{
+  background-color: rgb(197, 2, 2);
+  color: white;
+  width: 150px;
+  height: 20px;
+  padding: 15px 70px;
+}
+.button:hover{
+  background-color: rgb(248, 147, 147);
+}
+/* footer */
+.footer{
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  color: white;
+  padding: 20px 50px;
+}
+.footer-nav-list{
+  display: flex;
+  padding-right: 0;
+}
+.footer-item{
+  padding: 0 15px;
+  border-right: white 2px solid;
+}
+.footer-item-last{
+  margin-left:15px ;
+}
+.footer-nav-list a{
+  font-size: 13px;
+  color:white;
+}
+.footer-nav-list a:hover{
+  color: rgba(97, 96, 96, 0.925);
+}
+@media screen and (max-width : 768px){
+.header-nav-list{
+  display: none;
+}
+#hamburger{
+  display: flex;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+}
+#hamburger span{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  left: 2px;
+  transition: 0.4s;
+  z-index: 101;
+}
+#hamburger span:nth-of-type(1){
+  top: 10px;
+}
+#hamburger span:nth-of-type(2){
+  top: 20px;
+}
+#hamburger span:nth-of-type(3){
+  top: 30px;
+}
+#menu-bth-check:checked ~.menu-bth span:nth-of-type(1){
+  transform: rotate(45deg);
+  top: 20px;
+}
+#menu-bth-check:checked ~.menu-bth span:nth-of-type(2){
+  background-color: rgba(0, 0, 0, 0);
+}
+#menu-bth-check:checked ~.menu-bth span:nth-of-type(3){
+  transform: rotate(-45deg);
+  top: 20px;
+}
+#menu-bth-check{
+  display: none;
+}
+#drawer-nav{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: -100%;
+  background-color: white;
+  text-align: center;
+  padding: 20vh 0;
+  transition: 0.8s;
+}
+.drawer-nav-list a{
+  color: rgb(43, 90, 243);
+}
+.drawer-nav-item{
+  padding: 20px;
+}
+#menu-bth-check:checked ~ #drawer-nav{
+  left: 0;
+}
+.blog-list{
+  grid-template-columns: 100%;
+}
+.blog-card a{
+  font-size: 17px;
+}
+.button{
+  padding: 15px 40px;
+}
+.footer{
+  display: block;
+  text-align: center;
+}
+.footer-nav-list{
+  display: block;
+}
+.footer-item,
+.footer-item-last{
+  margin: 15px 0 15px;
+  border: none;
+  padding: 0;
+}
+}
