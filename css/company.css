@@ -220,7 +220,11 @@ table th {
   background-color: black;
   align-items: center;
   color: white;
-  padding: 20px 50px;
+  padding: 20px 100px;
+}
+.footer-title{
+  font-weight: normal;
+  font-size: 12px;
 }
 .footer-nav-list{
   display: flex;
@@ -234,7 +238,8 @@ table th {
   margin-left:15px ;
 }
 .footer-nav-list a{
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: normal;
   color:white;
 }
 .footer-nav-list a:hover{
